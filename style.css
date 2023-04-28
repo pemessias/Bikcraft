@@ -11,7 +11,7 @@ body {
 
 img {
     max-width: 100%;
-    display: block;
+    display: block; 
 }
 
 a {
@@ -48,6 +48,12 @@ p {
     padding: 0.93rem 1.8rem;
     border-radius: 0.25rem;
     color: #000;
+    border: 2px solid transparent;
+}
+
+.menu a:hover {
+    border: 2px solid #ee2211; 
+    transition: 0.3s;
 }
 
 .conteudo {
@@ -72,12 +78,18 @@ p {
 }
 
 .detalhe {
+    position: absolute;
+}
+
+.detalhe::before {
+    content: "";
+    display: inline-block;
     width: 3.75rem;
     height: 0.25rem;
-    background: #ee2211;
-    position: absolute;
+    background: #e21;
     top: 1.8rem;
-    right: -1.8rem; 
+    right: -1.8rem;
+    position: relative;
 }
 
 .botao {
@@ -88,13 +100,19 @@ p {
     display: block;
 }
 
+.botao:hover {
+    background: #900;
+    transition: 0.5s;
+}
+
 .subtitulo {
     font-size: 4rem;
     color: #c6c6c6; 
     text-align: right;
     padding: 2.5rem;
     align-self: center;
-
+    background-image: url(./img/onda.svg);
+    background-repeat: repeat;
 }
 
 .vantagens {
@@ -108,6 +126,16 @@ p {
     grid-template-columns: auto 1fr;
     gap: 0.6rem 1.25rem;
     padding: 1.25rem; 
+    border-left: 3.5px solid transparent;
+}
+
+.vantagens-item:hover {
+    border-left: 3.5px solid red;
+    transition: 0.1s;
+}
+
+.vantagens-item:nth-child(odd) {
+    background: #f7f7f7;
 }
 
 .vantagens p {
