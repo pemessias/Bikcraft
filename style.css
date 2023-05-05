@@ -14,20 +14,10 @@ body {
     margin-top: 3.75rem;
 }
 
-/*img {
+img {
     max-width: 100%;
     display: block; 
     height: 100%;
-    object-fit: cover;
-    object-position: top center;
-}*/
-
-.introducao-img {
-    max-width: 100%;
-    display: block; 
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
     object-fit: cover;
     object-position: top center;
 }
@@ -218,10 +208,6 @@ footer {
 
     .introducao h1 {
         font-size: 1.5rem;
-    }
-
-    .img {
-        height: auto;
     }
 
     .botao {
